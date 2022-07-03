@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Bouncing Ball</title>
+    </head>
+    <style>
+        img{
+            height: 150px;
+            position: absolute;
+            margin-top:30%;
+            left:700;
+    animation-direction:alternate;
+    animation-iteration-count: 1;
+            transition:linear;
+        }
+        @keyframes bounce {
+            0%
+            {
+                margin-top: 30%;
+            }
+            20%
+            {
+                margin-top: 10%;
+            }
+             40%
+            {
+                margin-top: 30%;
+            }
+             60%
+            {
+                margin-top: 17%;
+            }
+             80%
+            {
+                margin-top: 30%;
+            }
+             90%
+            {
+                margin-top: 20%;
+            }
+            100%
+            {
+                margin-top: 30%;
+            }
+    
+    </style>
+    <body>
+        <button onclick="bounce()">Bounce</button><br>
+        <img src="bouncing_ball.png" alt="ball">
+        
+    <script>
+        function bounce()
+        {
+        document.querySelector("img").style.animation='bounce 3.5s 1';}
+        </script>    </body>
+</html>
